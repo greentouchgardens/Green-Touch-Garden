@@ -1,0 +1,293 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Green Touch</title>
+
+<link rel="icon" type="image/png"
+      href="https://www.plant-science.co/wp-content/uploads/Plant-Science-Favicon.png">
+
+<style>
+/* -------------------------------------
+   GLOBAL DESIGN
+-------------------------------------- */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: url('https://png.pngtree.com/thumb_back/fw800/background/20231224/pngtree-dark-green-tropical-leaves-create-a-natural-texture-backdrop-image_13843064.png')
+        no-repeat center center fixed;
+    background-size: cover;
+    color: #2d3a2f;
+}
+
+/* Smooth fade-in animation */
+.fade-in {
+    animation: fadeIn 1.2s ease;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* -------------------------------------
+   HEADER
+-------------------------------------- */
+header {
+    background: rgba(255, 255, 255, 0.88);
+    padding: 28px 15px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+header h1 {
+    margin: 0;
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+header p {
+    margin-top: 6px;
+    opacity: 0.85;
+    font-size: 1.05rem;
+}
+
+/* -------------------------------------
+   NAVIGATION
+-------------------------------------- */
+nav {
+    text-align: center;
+    background: rgba(255,255,255,0.85);
+    padding: 12px;
+}
+nav a {
+    color: #2f4f36;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* -------------------------------------
+   HERO
+-------------------------------------- */
+.hero {
+    height: 260px;
+    background: url('https://cdn.wallpapersafari.com/86/86/A1wWjd.jpg')
+        center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* -------------------------------------
+   SECTIONS
+-------------------------------------- */
+.container {
+    background: rgba(255,255,255,0.93);
+    margin: 22px 14px;
+    padding: 28px 20px;
+    border-radius: 14px;
+    backdrop-filter: blur(4px);
+}
+h2 {
+    color: #345c3c;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 1.7rem;
+}
+
+/* -------------------------------------
+   SERVICE CARDS
+-------------------------------------- */
+.services {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.service-box {
+    background: rgba(255,255,255,0.96);
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.25s ease;
+}
+.service-box:hover {
+    transform: translateY(-5px);
+}
+.service-box h3 {
+    margin-top: 0;
+    color: #355b3d;
+}
+.service-img {
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+/* -------------------------------------
+   PRICING
+-------------------------------------- */
+.price {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #3c6e47;
+    margin-bottom: 6px;
+}
+
+/* -------------------------------------
+   WHATSAPP BUTTON
+-------------------------------------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 55px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-decoration: none;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    60% { transform: scale(1.12); }
+    100% { transform: scale(1); }
+}
+
+/* -------------------------------------
+   FOOTER
+-------------------------------------- */
+footer {
+    text-align: center;
+    background: rgba(255,255,255,0.88);
+    padding: 18px;
+    font-size: 0.95rem;
+    margin-top: 40px;
+}
+
+/* -------------------------------------
+   TABLET + DESKTOP RESPONSIVENESS
+-------------------------------------- */
+@media (min-width: 600px) {
+    .hero { height: 320px; font-size: 2.4rem; }
+    .services { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 900px) {
+    .services { grid-template-columns: repeat(3, 1fr); }
+    .hero { height: 360px; font-size: 2.6rem; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="fade-in">
+    <p>"Bringing life back to your garden"</p>
+</header>
+
+<nav>
+    <a href="#services">Services</a>
+    <a href="/GardenService/contact.html">Contact</a>
+</nav>
+
+<div class="hero fade-in">
+    Green Touch Garden Services
+</div>
+
+<!-- SERVICES SECTION -->
+<div class="container fade-in" id="services">
+    
+
+    <div class="services">
+
+        <!-- Lawn Maintenance -->
+        <div class="service-box">
+            <img class="service-img" src="https://i.roamcdn.net/hz/pi/base/387e26e620e4285b9ad549fd064ed32a/-/horizon-files-prod/pi/picture/q4m5prp/4dbb476884edce3432c87fa5d6a198cb87703254.jpg" alt="Lawn Maintenance">
+            <h3>Lawn mowing and edges</h3>
+            <p>Precision mowing, edging, and lawn health management to keep your yard clean, vibrant, and professionally maintained throughout the year.</p>
+        </div>
+
+       
+
+        <!-- Hedge Sculpting -->
+        <div class="service-box">
+            <img class="service-img" src="https://cdn.shopify.com/s/files/1/0862/7827/5406/files/hedge-trimming-garden-shears-002.jpg?v=1738600192">
+            <h3>Hedge trimming and pruning</h3>
+            <p>Elegant shaping and maintenance of hedges, shrubs, and perimeter greenery to maintain a refined natural aesthetic across your property.</p>
+        </div>
+
+           <!-- FIXED TREE FELLING IMAGE + ENHANCED CONTENT -->
+        <div class="service-box">
+            <img class="service-img" src="https://as2.ftcdn.net/v2/jpg/00/82/77/51/1000_F_82775115_w92A7yxRmUKGFbrhTAqAhZ4mfW9XhHjU.jpg" alt="No image">
+            <h3>Weeding</h3>
+            <p>Weeding services to keep your garden neat, healthy, and thriving. 
+                  By carefully removing unwanted weeds, I help protect your plants from competition for water, nutrients, and sunlight, ensuring your garden looks well cared for and grows at its best.</p>
+        </div>
+        <!-- Garden Clean-ups -->
+        <div class="service-box">
+            <img class="service-img" src="https://wedump4u.co.uk/wp-content/uploads/2021/03/Garden-Waste_252272356.jpg" alt="Garden Clean-ups">
+            <h3>Garden refuse removal</h3>
+            <p>Clear away green waste such as grass cuttings, leaves, branches, and general garden debris. This service helps keep your outdoor space clean, safe, and tidy after maintenance or landscaping, saving you time and effort while leaving your garden looking its best.</p>
+        </div>
+
+          <!-- Garden Clean-ups -->
+        <div class="service-box">
+            <img class="service-img" src="https://i2-prod.mirror.co.uk/article36323883.ece/ALTERNATES/s1200f/0_Closeup-of-hands-planting-vegetables-in-community-garden.jpg" alt="Garden Clean-ups">
+            <h3>Small Planting Jobs</h3>
+            <p>Enhance your garden with new flowers, plants, or shrubs. Whether it’s planting seasonal цветs, replacing existing plants, or adding greenery to specific areas, I ensure neat planting and proper care to help your plants establish and grow well.</p>
+        </div>
+          
+          
+          <div class="service-box">
+            <img class="service-img" src="https://sandtongardening.co.za/wp-content/uploads/2021/07/Garden_Maintenance_big.png" alt="Garden Clean-ups">
+            <h3>General Garden Care</h3>
+            <p>Keep your outdoor space neat, healthy, and well maintained. This includes basic tasks such as light pruning, watering, lawn tidying, and overall upkeep to ensure your garden stays clean, attractive, and enjoyable throughout the year.</p>
+        </div>
+
+
+          <div class="service-box">
+            <img class="service-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg7f265YdJ5LoQVxMgwmGNuKVHim17EOwQpQ&s" alt="Garden Clean-ups">
+            <h3>Composting services</h3>
+            <p>Manage organic garden waste in an eco‑friendly way. By turning garden refuse into nutrient‑rich compost, this service supports healthier soil, reduces waste, and helps your garden grow naturally and sustainably.</p>
+        </div>
+          
+    </div>
+</div>
+
+
+
+
+      
+
+
+
+
+<a href="https://api.whatsapp.com/send?phone=27648657972"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<footer>
+    © 2026 Glenanda Garden Services — Excellence Rooted in Nature.
+</footer>
+
+</body>
+</html>
